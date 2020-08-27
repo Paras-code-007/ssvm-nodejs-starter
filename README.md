@@ -1,3 +1,10 @@
+# Intro to the App
+This app deals with encoding and decoding text with base64 encryption.
+This type of encryption was used a long back, and forms the basis of some of the encryption techniques we use nowadays in our day to day life.
+At the end there is also a cipher challenge which use functional programming approach where you pass in the input and get the output and see what the function does.
+guess the cipher by seeing the functioning.
+
+
 # My Experience with the project
 
 I am a sophomore doing my graduation in Computer Science and Engineering. I started web at my first year in the college and was always curious about the new and upcoming technologies in the feild. From the day i learnt that V8 was not the only the main thing in our browser and there was this web assembly thing which is very efficent and which can transpile any code written in any systems language into binary executables which can run on the browser and are very efficent and high performance, i saw this very appealing and the was confident to see the future of web development and where it will be going. Seeing the potential of web assembly through desktop applications like figma and autocad running fabulously and implemented over the browser i could understand the importance of such a technology and serverless computing.
