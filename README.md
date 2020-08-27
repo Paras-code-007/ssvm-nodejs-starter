@@ -1,3 +1,19 @@
+# My Experience with the project
+
+I am a sophomore doing my graduation in Computer Science and Engineering. I started web at my first year in the college and was always curious about the new and upcoming technologies in the feild. From the day i learnt that V8 was not the only the main thing in our browser and there was this web assembly thing which is very efficent and which can transpile any code written in any systems language into binary executables which can run on the browser and are very efficent and high performance, i saw this very appealing and the was confident to see the future of web development and where it will be going. Seeing the potential of web assembly through desktop applications like figma and autocad running fabulously and implemented over the browser i could understand the importance of such a technology and serverless computing.
+I myself tried my hands once on web assembly using emscripten. But suddenly i read this article of being able to run the web assembly on the serverside instaed of the client side using second state virtual machine and was really cool.
+I really wanna give heads off to the idea of virtualizing the web assembly environment from web browser and taking it to server side to get the advantages of web assembly and systems language on the server side as well to securely run a system app as a server.
+I was fascinated about this but a hard time came when i tried to implement it.
+Setting up the environment locally on my mac was difficult because of outaded system version of c++ on mac.
+So i decided to learn docker and really understood its need and why it is important. 
+And from that day docker became one of my favourite tools. We can do a lot of things with docker without really needing virtual machines and it also helps in deploying our app and moving the entire web app including everything data in databases easily from one cloud service to another
+I can practice linux because who really needs a gui, and why to even create a virtual machine which can make my mac slow.
+Since ssvm allows to use rust code on server side i had to learn rust which was already on my hit to go list because its way better and moder than cpp.
+I already know cpp but i found rust more functional than cpp and with widespread approaches but i found it hard to get up with rust syntax and took a hard time figuring it out.
+I was not able to get that well versed with rust because i need time to adjust with its syntax so i was only able tobuild really basic functions with it to be implement on ssvm.
+Overall it was a great learning experience as it give me an approach how to grasp a language faster and debugging strategies to follow.
+
+
 # Getting started
 
 ![Build and test](https://github.com/second-state/ssvm-nodejs-starter/workflows/Build%20and%20test/badge.svg)
@@ -22,8 +38,7 @@ $ docker run -p 3000:3000 --rm -it -v $(pwd):/app secondstate/ssvm-nodejs-starte
 From a second terminal window, you can test the local server.
 
 ```
-$ curl http://localhost:3000/?name=SSVM
-hello SSVM
+$ curl -d '{"data":"helloworld"}' -H "Content-Type: application/json" -X POST http://localhost:3000/encode  
 ```
 
 
@@ -74,21 +89,8 @@ Or, you could open another terminal window in the IDE via the `Terminal -> New T
 From the terminal window, you can test the local server.
 
 ```
-$ curl http://127.0.0.1:3000/?name=SSVM
-hello SSVM
+$ curl -d '{"data":"helloworld"}' -H "Content-Type: application/json" -X POST http://localhost:3000/encode
 ```
-
-### More exercises
-
-Now, you can copy and paste code from [this project](https://github.com/second-state/wasm-learning/tree/master/nodejs/functions).
-
-* `src/lib.rs` --> Replace with [code here](https://github.com/second-state/wasm-learning/blob/master/nodejs/functions/src/lib.rs)
-* `Cargo.toml` --> Replace with [code here](https://github.com/second-state/wasm-learning/blob/master/nodejs/functions/Cargo.toml)
-* `node/app.js` --> Replace with [code here](https://github.com/second-state/wasm-learning/blob/master/nodejs/functions/node/app.js)
-
-Click on Run to see the build output in Terminal window, and application console output in Debug window.
-
-Try to log into GitHub from the IDE, and use the IDE's GitHub integration features to commit the changes, push the changes back into your forked repository, and perhaps even send us a Pull Request from the IDE!
 
 ## Read more:
 
