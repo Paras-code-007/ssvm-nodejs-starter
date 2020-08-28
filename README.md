@@ -1,4 +1,7 @@
 # Intro to the App
+
+https://base64fun.herokuapp.com/
+
 This app deals with encoding and decoding text with base64 encryption.
 This type of encryption was used a long back, and forms the basis of some of the encryption techniques we use nowadays in our day to day life.
 At the end there is also a cipher challenge which use functional programming approach where you pass in the input and get the output and see what the function does.
